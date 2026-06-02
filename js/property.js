@@ -1,5 +1,6 @@
 'use strict';
 
+// ===== NAVBAR =====
 const nav = document.getElementById('prop-nav');
 const stickyBar = document.getElementById('sticky-bar');
 
@@ -9,11 +10,13 @@ window.addEventListener('scroll', () => {
   stickyBar.classList.toggle('show', scrolled > 400);
 });
 
+// ===== HERO BG ANIMATION =====
 window.addEventListener('load', () => {
   const heroBg = document.querySelector('.hero-bg');
   if (heroBg) heroBg.classList.add('loaded');
 });
 
+// ===== PARALLAX =====
 window.addEventListener('scroll', () => {
   const heroBg = document.querySelector('.hero-bg');
   if (heroBg && window.scrollY < window.innerHeight) {
@@ -21,6 +24,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// ===== GALLERY IMAGES =====
 const galleryImages = [
   'https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=1400&q=90',
   'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85',
@@ -33,6 +37,7 @@ const galleryImages = [
   'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=85',
 ];
 
+// ===== LIGHTBOX =====
 const lightbox = document.getElementById('lightbox');
 const lbImg = document.getElementById('lb-img');
 const lbCounter = document.getElementById('lb-counter');
@@ -75,15 +80,19 @@ document.addEventListener('keydown', (e) => {
 
 lbImg.style.transition = 'opacity 0.15s ease';
 
+// Assign gallery items
 document.querySelectorAll('.gallery-item').forEach((item, i) => {
   item.addEventListener('click', () => openLightbox(i));
 });
 
+// ===== SCROLL REVEAL =====
 const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+  entries.forEach((entry, idx) => {
     if (entry.isIntersecting) {
       const delay = entry.target.dataset.delay || 0;
-      setTimeout(() => { entry.target.classList.add('visible'); }, delay);
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, delay);
       revealObserver.unobserve(entry.target);
     }
   });
@@ -94,15 +103,19 @@ document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach((el, i
   revealObserver.observe(el);
 });
 
+// ===== COUNTERS =====
 function animateNum(el) {
   const target = parseFloat(el.dataset.target);
   const isFloat = el.dataset.float === 'true';
   const duration = 2200;
   const step = target / (duration / 16);
   let current = 0;
+
   const timer = setInterval(() => {
     current = Math.min(current + step, target);
-    el.textContent = isFloat ? current.toFixed(1) : Math.floor(current).toLocaleString('ar-SA');
+    el.textContent = isFloat
+      ? current.toFixed(1)
+      : Math.floor(current).toLocaleString('ar-SA');
     if (current >= target) clearInterval(timer);
   }, 16);
 }
@@ -118,6 +131,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
+// ===== CONTACT FORM =====
 const form = document.getElementById('propForm');
 if (form) {
   form.addEventListener('submit', (e) => {
@@ -126,6 +140,7 @@ if (form) {
     const success = document.querySelector('.form-success');
     btn.innerHTML = '⏳ جارٍ الإرسال...';
     btn.disabled = true;
+
     setTimeout(() => {
       form.style.display = 'none';
       success.style.display = 'block';
@@ -133,6 +148,7 @@ if (form) {
   });
 }
 
+// ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
@@ -143,6 +159,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+// ===== VIDEO PLACEHOLDER =====
 const videoPlaceholder = document.querySelector('.video-placeholder');
 if (videoPlaceholder) {
   videoPlaceholder.addEventListener('click', () => {
