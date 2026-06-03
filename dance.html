@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="أكاديمية Rhythm - أعلى مستوى في تعليم الرقص في العالم العربي. احترف الرقص مع أفضل المدربين العالميين">
+  <meta property="og:title" content="أكاديمية Rhythm | الرقص فن والفن حياة">
+  <meta property="og:description" content="انضم لأكاديمية Rhythm وتعلم الرقص على يد نخبة المدربين العالميين">
+  <title>أكاديمية Rhythm | الرقص فن والفن حياة</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/dance.css">
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <span class="loader-r">R</span>
+      <span class="loader-h">H</span>
+      <span class="loader-y">Y</span>
+      <span class="loader-t">T</span>
+      <span class="loader-hm">H</span>
+      <span class="loader-m">M</span>
+    </div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+    <p class="loader-text">جاري التحميل...</p>
+  </div>
+</div>
+
+<!-- ===== CURSOR ===== -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <div class="logo-badge">
+        <i class="fas fa-music"></i>
+      </div>
+      <div class="logo-words">
+        <span class="logo-main">Rhythm</span>
+        <span class="logo-sub">أكاديمية الرقص</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+      <li><a href="#about" class="nav-link">عن الأكاديمية</a></li>
+      <li><a href="#courses" class="nav-link">الدورات</a></li>
+      <li><a href="#instructors" class="nav-link">المدربون</a></li>
+      <li><a href="#schedule" class="nav-link">الجدول</a></li>
+      <li><a href="#gallery" class="nav-link">المعرض</a></li>
+      <li><a href="#pricing" class="nav-link">الأسعار</a></li>
+      <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="tel:+966500000000" class="nav-phone">
+        <i class="fas fa-phone"></i>
+        <span>0500 000 000</span>
+      </a>
+      <a href="#enroll" class="btn-enroll">سجّل الآن</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-star"></i>
+      <span>الأكاديمية رقم #1 في الرقص</span>
+      <i class="fas fa-star"></i>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line-1">اكتشف</span>
+      <span class="line-2 gradient-text">فن الرقص</span>
+      <span class="line-3">بأسلوب عالمي</span>
+    </h1>
+
+    <p class="hero-desc">
+      انضم إلى أكثر من <strong>5,000+</strong> طالب يتعلمون الرقص مع نخبة المدربين العالميين.
+      من المبتدئين إلى المحترفين — طريقك للتألق يبدأ هنا.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#courses" class="btn-hero-primary">
+        <span>استكشف الدورات</span>
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <a href="#about" class="btn-hero-secondary">
+        <div class="play-icon">
+          <i class="fas fa-play"></i>
+        </div>
+        <span>شاهد الفيديو</span>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" data-count="5000">0</div>
+        <div class="stat-label">طالب نشط</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-count="120">0</div>
+        <div class="stat-label">دورة متاحة</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-count="45">0</div>
+        <div class="stat-label">مدرب معتمد</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-count="15">0</div>
+        <div class="stat-label">سنة خبرة</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dancer">
+    <div class="dancer-glow"></div>
+    <div class="dancer-figure">
+      <div class="figure-body">
+        <div class="dancer-silhouette"></div>
+      </div>
+    </div>
+    <div class="floating-card fc1">
+      <i class="fas fa-fire"></i>
+      <div>
+        <strong>سالسا</strong>
+        <span>مستوى متقدم</span>
+      </div>
+    </div>
+    <div class="floating-card fc2">
+      <i class="fas fa-medal"></i>
+      <div>
+        <strong>بطل العالم 2024</strong>
+        <span>مدربنا يوسف</span>
+      </div>
+    </div>
+    <div class="floating-card fc3">
+      <i class="fas fa-star"></i>
+      <div>
+        <strong>4.9 / 5</strong>
+        <span>تقييم الطلاب</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+    <span>اسحب للأسفل</span>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>✦ باليه</span>
+    <span>✦ هيب هوب</span>
+    <span>✦ سالسا</span>
+    <span>✦ كونتمبوراري</span>
+    <span>✦ برقصة شرقية</span>
+    <span>✦ تانغو</span>
+    <span>✦ زومبا</span>
+    <span>✦ ريغيتون</span>
+    <span>✦ جاز</span>
+    <span>✦ ستريت دانس</span>
+    <span>✦ باليه</span>
+    <span>✦ هيب هوب</span>
+    <span>✦ سالسا</span>
+    <span>✦ كونتمبوراري</span>
+    <span>✦ برقصة شرقية</span>
+    <span>✦ تانغو</span>
+    <span>✦ زومبا</span>
+    <span>✦ ريغيتون</span>
+    <span>✦ جاز</span>
+    <span>✦ ستريت دانس</span>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about">
+  <div class="section-container">
+    <div class="about-visual">
+      <div class="about-img-stack">
+        <div class="about-img main-img">
+          <div class="img-placeholder gradient-dance-1">
+            <i class="fas fa-person-running"></i>
+            <span>استوديو الرقص</span>
+          </div>
+        </div>
+        <div class="about-img side-img">
+          <div class="img-placeholder gradient-dance-2">
+            <i class="fas fa-music"></i>
+            <span>تدريب فردي</span>
+          </div>
+        </div>
+        <div class="about-badge-floating">
+          <i class="fas fa-award"></i>
+          <div>
+            <strong>معتمدون دولياً</strong>
+            <span>من IDTA البريطانية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="section-tag">من نحن</div>
+      <h2 class="section-title">أكاديمية تُغيّر<br><span class="gradient-text">حياتك بالإيقاع</span></h2>
+      <p class="about-text">
+        أكاديمية Rhythm ليست مجرد مكان لتعلم الرقص — إنها رحلة تحول كاملة.
+        نؤمن أن الرقص لغة عالمية تتخطى الحدود وتُعبّر عما لا تستطيع الكلمات قوله.
+      </p>
+      <p class="about-text">
+        منذ عام 2009، دربنا أكثر من 5,000 طالب على يد نخبة من المدربين الحاصلين على
+        شهادات من أمريكا وأوروبا. برامجنا مصممة لكل الأعمار والمستويات.
+      </p>
+
+      <div class="about-features">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+          <div>
+            <strong>مدربون معتمدون عالمياً</strong>
+            <span>حاصلون على شهادات من أمريكا وأوروبا</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+          <div>
+            <strong>استوديوهات مجهزة بأحدث التقنيات</strong>
+            <span>أرضيات مرنة، إضاءة احترافية، نظام صوت متطور</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+          <div>
+            <strong>شهادات معتمدة دولياً</strong>
+            <span>احصل على شهادة معترف بها في أكثر من 50 دولة</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+          <div>
+            <strong>مجتمع ودعم مستمر</strong>
+            <span>انضم لمجتمع راقصين متحمسين ومحترفين</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#courses" class="btn-about">
+        <span>اكتشف دوراتنا</span>
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COURSES ===== -->
+<section id="courses" class="courses">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-tag">دوراتنا</div>
+      <h2 class="section-title">تشكيلة واسعة من<br><span class="gradient-text">أنواع الرقص</span></h2>
+      <p class="section-desc">من الكلاسيكي إلى المعاصر — لدينا الدورة المثالية لك</p>
+    </div>
+
+    <div class="courses-filter">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="classic">كلاسيكي</button>
+      <button class="filter-btn" data-filter="modern">عصري</button>
+      <button class="filter-btn" data-filter="latin">لاتيني</button>
+      <button class="filter-btn" data-filter="street">ستريت</button>
+    </div>
+
+    <div class="courses-grid" id="coursesGrid">
+
+      <div class="course-card" data-category="classic">
+        <div class="course-img ballet">
+          <div class="course-overlay">
+            <a href="#enroll" class="btn-course-enroll">سجّل الآن</a>
+          </div>
+          <div class="course-icon"><i class="fas fa-shoe-prints"></i></div>
+          <div class="course-level beginner">مبتدئ</div>
+        </div>
+        <div class="course-body">
+          <div class="course-meta">
+            <span><i class="fas fa-clock"></i> 3 أشهر</span>
+            <span><i class="fas fa-users"></i> 8 طلاب</span>
+            <span><i class="fas fa-star"></i> 4.9</span>
+          </div>
+          <h3 class="course-name">الباليه الكلاسيكي</h3>
+          <p class="course-desc">تعلم أسرار الباليه الكلاسيكي الأصيل — من الوقفة الأساسية إلى القفزات والبيروات المدهشة.</p>
+          <div class="course-instructor">
+            <div class="inst-avatar ballet-inst"></div>
+            <div>
+              <strong>نورة الرشيدي</strong>
+              <span>خبرة 12 سنة</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-old">800 ريال</span>
+              <span class="price-new">599 ريال</span>
+            </div>
+            <a href="#enroll" class="btn-course">انضم الآن</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="modern">
+        <div class="course-img contemporary">
+          <div class="course-overlay">
+            <a href="#enroll" class="btn-course-enroll">سجّل الآن</a>
+          </div>
+          <div class="course-icon"><i class="fas fa-wind"></i></div>
+          <div class="course-level intermediate">متوسط</div>
+        </div>
+        <div class="course-body">
+          <div class="course-meta">
+            <span><i class="fas fa-clock"></i> 4 أشهر</span>
+            <span><i class="fas fa-users"></i> 10 طلاب</span>
+            <span><i class="fas fa-star"></i> 4.8</span>
+          </div>
+          <h3 class="course-name">الكونتمبوراري</h3>
+          <p class="course-desc">اكتشف حرية التعبير عبر الرقص المعاصر — أسلوب يجمع بين المشاعر والحركة بشكل فريد.</p>
+          <div class="course-instructor">
+            <div class="inst-avatar cont-inst"></div>
+            <div>
+              <strong>لمياء العنزي</strong>
+              <span>خبرة 9 سنوات</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-old">700 ريال</span>
+              <span class="price-new">549 ريال</span>
+            </div>
+            <a href="#enroll" class="btn-course">انضم الآن</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card featured" data-category="latin">
+        <div class="course-img salsa">
+          <div class="course-overlay">
+            <a href="#enroll" class="btn-course-enroll">سجّل الآن</a>
+          </div>
+          <div class="course-icon"><i class="fas fa-fire"></i></div>
+          <div class="course-level advanced">متقدم</div>
+          <div class="course-featured-badge">الأكثر طلباً</div>
+        </div>
+        <div class="course-body">
+          <div class="course-meta">
+            <span><i class="fas fa-clock"></i> 6 أشهر</span>
+            <span><i class="fas fa-users"></i> 12 طلاب</span>
+            <span><i class="fas fa-star"></i> 5.0</span>
+          </div>
+          <h3 class="course-name">السالسا اللاتينية</h3>
+          <p class="course-desc">أشعل الحماس مع السالسا الكوبية والنيويوركية — من الخطوات الأولى حتى الأداء على المسرح.</p>
+          <div class="course-instructor">
+            <div class="inst-avatar salsa-inst"></div>
+            <div>
+              <strong>يوسف الحربي</strong>
+              <span>بطل العالم 2024</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-old">1200 ريال</span>
+              <span class="price-new">899 ريال</span>
+            </div>
+            <a href="#enroll" class="btn-course">انضم الآن</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="street">
+        <div class="course-img hiphop">
+          <div class="course-overlay">
+            <a href="#enroll" class="btn-course-enroll">سجّل الآن</a>
+          </div>
+          <div class="course-icon"><i class="fas fa-headphones"></i></div>
+          <div class="course-level beginner">مبتدئ</div>
+        </div>
+        <div class="course-body">
+          <div class="course-meta">
+            <span><i class="fas fa-clock"></i> 2 أشهر</span>
+            <span><i class="fas fa-users"></i> 15 طلاب</span>
+            <span><i class="fas fa-star"></i> 4.7</span>
+          </div>
+          <h3 class="course-name">هيب هوب</h3>
+          <p class="course-desc">تعلم الهيب هوب الأصيل — Breaking, Popping, Locking وأحدث حركات الستريت دانس.</p>
+          <div class="course-instructor">
+            <div class="inst-avatar hiphop-inst"></div>
+            <div>
+              <strong>ماجد السهلي</strong>
+              <span>خبرة 7 سنوات</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-old">600 ريال</span>
+              <span class="price-new">449 ريال</span>
+            </div>
+            <a href="#enroll" class="btn-course">انضم الآن</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="latin">
+        <div class="course-img tango">
+          <div class="course-overlay">
+            <a href="#enroll" class="btn-course-enroll">سجّل الآن</a>
+          </div>
+          <div class="course-icon"><i class="fas fa-heart"></i></div>
+          <div class="course-level intermediate">متوسط</div>
+        </div>
+        <div class="course-body">
+          <div class="course-meta">
+            <span><i class="fas fa-clock"></i> 5 أشهر</span>
+            <span><i class="fas fa-users"></i> 6 طلاب</span>
+            <span><i class="fas fa-star"></i> 4.9</span>
+          </div>
+          <h3 class="course-name">التانغو الأرجنتيني</h3>
+          <p class="course-desc">تعلم التانغو الأرجنتيني الأصيل — رقصة المشاعر والعاطفة بأسلوب احترافي.</p>
+          <div class="course-instructor">
+            <div class="inst-avatar tango-inst"></div>
+            <div>
+              <strong>سارة الغامدي</strong>
+              <span>خبرة 11 سنة</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-old">900 ريال</span>
+              <span class="price-new">699 ريال</span>
+            </div>
+            <a href="#enroll" class="btn-course">انضم الآن</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="modern">
+        <div class="course-img zumba">
+          <div class="course-overlay">
+            <a href="#enroll" class="btn-course-enroll">سجّل الآن</a>
+          </div>
+          <div class="course-icon"><i class="fas fa-bolt"></i></div>
+          <div class="course-level beginner">مبتدئ</div>
+        </div>
+        <div class="course-body">
+          <div class="course-meta">
+            <span><i class="fas fa-clock"></i> 1 شهر</span>
+            <span><i class="fas fa-users"></i> 20 طلاب</span>
+            <span><i class="fas fa-star"></i> 4.8</span>
+          </div>
+          <h3 class="course-name">زومبا فيتنس</h3>
+          <p class="course-desc">متعة الرقص مع فوائد اللياقة البدنية — دروس حيوية تجعل التمرين ممتعاً ومنعشاً.</p>
+          <div class="course-instructor">
+            <div class="inst-avatar zumba-inst"></div>
+            <div>
+              <strong>هنادي المطيري</strong>
+              <span>خبرة 6 سنوات</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <div class="course-price">
+              <span class="price-old">400 ريال</span>
+              <span class="price-new">299 ريال</span>
+            </div>
+            <a href="#enroll" class="btn-course">انضم الآن</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="courses-cta">
+      <p>هل تريد معرفة المزيد من الدورات؟</p>
+      <a href="#contact" class="btn-see-all">تواصل معنا <i class="fas fa-arrow-left"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE STRIP ===== -->
+<div class="experience-strip">
+  <div class="exp-item">
+    <i class="fas fa-trophy"></i>
+    <div>
+      <strong>15+</strong>
+      <span>جائزة دولية</span>
+    </div>
+  </div>
+  <div class="exp-item">
+    <i class="fas fa-globe"></i>
+    <div>
+      <strong>50+</strong>
+      <span>دولة معترفة</span>
+    </div>
+  </div>
+  <div class="exp-item">
+    <i class="fas fa-certificate"></i>
+    <div>
+      <strong>3000+</strong>
+      <span>شهادة ممنوحة</span>
+    </div>
+  </div>
+  <div class="exp-item">
+    <i class="fas fa-percent"></i>
+    <div>
+      <strong>98%</strong>
+      <span>نسبة رضا الطلاب</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== INSTRUCTORS ===== -->
+<section id="instructors" class="instructors">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-tag">مدربونا</div>
+      <h2 class="section-title">نخبة من<br><span class="gradient-text">الأبطال العالميين</span></h2>
+      <p class="section-desc">كل مدرب لدينا حمل لقباً دولياً أو حاصل على شهادة من أرقى معاهد العالم</p>
+    </div>
+
+    <div class="instructors-grid">
+
+      <div class="instructor-card">
+        <div class="inst-photo">
+          <div class="inst-photo-inner ballet-bg">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="inst-info">
+          <h3>نورة الرشيدي</h3>
+          <p class="inst-title">مدربة باليه كلاسيكي</p>
+          <div class="inst-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>4.9</span>
+          </div>
+          <div class="inst-tags">
+            <span>باليه</span>
+            <span>لياقة</span>
+            <span>IDTA</span>
+          </div>
+          <p class="inst-bio">حاصلة على درجة الدكتوراه في فنون الرقص من لندن. درّبت في ملاك الملكة الأوبرا في باريس.</p>
+        </div>
+      </div>
+
+      <div class="instructor-card featured-inst">
+        <div class="inst-photo">
+          <div class="inst-photo-inner salsa-bg">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <div class="inst-champion"><i class="fas fa-crown"></i> بطل العالم</div>
+        </div>
+        <div class="inst-info">
+          <h3>يوسف الحربي</h3>
+          <p class="inst-title">بطل العالم في السالسا 2024</p>
+          <div class="inst-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>5.0</span>
+          </div>
+          <div class="inst-tags">
+            <span>سالسا</span>
+            <span>باتشاتا</span>
+            <span>تانغو</span>
+          </div>
+          <p class="inst-bio">حامل لقب بطل العالم في السالسا 2024. درّب في ميامي ونيويورك وكوبا. أكثر من 2000 ساعة تدريس.</p>
+        </div>
+      </div>
+
+      <div class="instructor-card">
+        <div class="inst-photo">
+          <div class="inst-photo-inner cont-bg">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="inst-info">
+          <h3>لمياء العنزي</h3>
+          <p class="inst-title">مدربة الكونتمبوراري</p>
+          <div class="inst-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.8</span>
+          </div>
+          <div class="inst-tags">
+            <span>كونتمبوراري</span>
+            <span>جاز</span>
+            <span>فيوجن</span>
+          </div>
+          <p class="inst-bio">تخرجت من أكاديمية Alvin Ailey الأمريكية. شاركت في عروض Broadway وفعاليات دولية متعددة.</p>
+        </div>
+      </div>
+
+      <div class="instructor-card">
+        <div class="inst-photo">
+          <div class="inst-photo-inner hiphop-bg">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="inst-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="inst-info">
+          <h3>ماجد السهلي</h3>
+          <p class="inst-title">مدرب هيب هوب وبريك دانس</p>
+          <div class="inst-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.7</span>
+          </div>
+          <div class="inst-tags">
+            <span>هيب هوب</span>
+            <span>بريكينج</span>
+            <span>بوبينج</span>
+          </div>
+          <p class="inst-bio">مدرب معتمد من ولاية كاليفورنيا. شارك في بطولات World Hip Hop Championship تتالياً 3 مرات.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section id="schedule" class="schedule">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-tag">الجدول الأسبوعي</div>
+      <h2 class="section-title">احجز وقتك<br><span class="gradient-text">مع المدرب المثالي</span></h2>
+      <p class="section-desc">جداول مرنة تناسب كل التزاماتك اليومية</p>
+    </div>
+
+    <div class="schedule-tabs">
+      <button class="sched-tab active" data-day="sun">الأحد</button>
+      <button class="sched-tab" data-day="mon">الاثنين</button>
+      <button class="sched-tab" data-day="tue">الثلاثاء</button>
+      <button class="sched-tab" data-day="wed">الأربعاء</button>
+      <button class="sched-tab" data-day="thu">الخميس</button>
+    </div>
+
+    <div class="schedule-grid" id="scheduleGrid">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="schedule-note">
+      <i class="fas fa-info-circle"></i>
+      <span>جميع الحصص متاحة للحجز أونلاين. يُرجى الحجز قبل 24 ساعة على الأقل.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-tag">آراء الطلاب</div>
+      <h2 class="section-title">ماذا قال<br><span class="gradient-text">طلابنا عنا؟</span></h2>
+    </div>
+
+    <div class="testimonials-slider" id="testimonialsSlider">
+
+      <div class="testimonial-card active">
+        <div class="test-quote"><i class="fas fa-quote-right"></i></div>
+        <p class="test-text">
+          لم أكن أتوقع أن أتعلم السالسا بهذا المستوى في 3 أشهر فقط! المدرب يوسف استثنائي جداً —
+          يعرف كيف يوصل المعلومة بأسلوب ممتع. الأكاديمية تستحق كل ريال.
+        </p>
+        <div class="test-author">
+          <div class="test-avatar av1"></div>
+          <div>
+            <strong>فهد العتيبي</strong>
+            <span>طالب سالسا — الرياض</span>
+          </div>
+          <div class="test-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="test-quote"><i class="fas fa-quote-right"></i></div>
+        <p class="test-text">
+          دورة الباليه غيّرت حياتي! كنت أخاف من الفشل ولكن نورة أعطتني الثقة والمهارة معاً.
+          الاستوديو رائع والجو المحترم جداً جعلني أحب التدريب كل يوم.
+        </p>
+        <div class="test-author">
+          <div class="test-avatar av2"></div>
+          <div>
+            <strong>ريم الشمري</strong>
+            <span>طالبة باليه — جدة</span>
+          </div>
+          <div class="test-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="test-quote"><i class="fas fa-quote-right"></i></div>
+        <p class="test-text">
+          بدأت الزومبا لإنقاص الوزن لكن وجدت نفسي أعشق الرقص! المدربة هنادي لا تُوصف —
+          طاقتها معدية والحصص ممتعة بشكل لا يصدق. أنصح الجميع بالتسجيل.
+        </p>
+        <div class="test-author">
+          <div class="test-avatar av3"></div>
+          <div>
+            <strong>منال القحطاني</strong>
+            <span>طالبة زومبا — الدمام</span>
+          </div>
+          <div class="test-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="test-quote"><i class="fas fa-quote-right"></i></div>
+        <p class="test-text">
+          أعمل في مجال التمثيل وتعلم الكونتمبوراري أضاف بعداً جديداً لأدائي. لمياء مدربة فذة
+          وتفهم تماماً كيف تجمع بين التعبير الفني والتقنية الراقصة.
+        </p>
+        <div class="test-author">
+          <div class="test-avatar av4"></div>
+          <div>
+            <strong>خالد المنصور</strong>
+            <span>ممثل وطالب كونتمبوراري</span>
+          </div>
+          <div class="test-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-right"></i></button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-left"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="gallery">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-tag">المعرض</div>
+      <h2 class="section-title">لحظات من<br><span class="gradient-text">داخل الأكاديمية</span></h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gi-large ballet-gallery">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand"></i>
+          <span>الباليه الكلاسيكي</span>
+        </div>
+      </div>
+      <div class="gallery-item salsa-gallery">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand"></i>
+          <span>السالسا اللاتينية</span>
+        </div>
+      </div>
+      <div class="gallery-item hiphop-gallery">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand"></i>
+          <span>هيب هوب</span>
+        </div>
+      </div>
+      <div class="gallery-item gi-tall contemp-gallery">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand"></i>
+          <span>الكونتمبوراري</span>
+        </div>
+      </div>
+      <div class="gallery-item tango-gallery">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand"></i>
+          <span>التانغو</span>
+        </div>
+      </div>
+      <div class="gallery-item zumba-gallery">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand"></i>
+          <span>زومبا</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing" class="pricing">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-tag">خطط الاشتراك</div>
+      <h2 class="section-title">اختر الخطة<br><span class="gradient-text">المناسبة لك</span></h2>
+      <p class="section-desc">جميع الخطط تشمل حرية الإلغاء في أي وقت بدون رسوم</p>
+    </div>
+
+    <div class="pricing-toggle">
+      <span class="active">شهري</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="billingToggle">
+        <span class="toggle-slider"></span>
+      </label>
+      <span>سنوي <em class="discount-badge">وفّر 20%</em></span>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <div class="pricing-icon"><i class="fas fa-seedling"></i></div>
+          <h3>المبتدئ</h3>
+          <p>للبداية الصحيحة</p>
+        </div>
+        <div class="pricing-price">
+          <div class="monthly-price">
+            <span class="currency">ريال</span>
+            <span class="amount">299</span>
+            <span class="period">/ شهر</span>
+          </div>
+          <div class="yearly-price" style="display:none">
+            <span class="currency">ريال</span>
+            <span class="amount">239</span>
+            <span class="period">/ شهر</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> دورة واحدة من اختيارك</li>
+          <li><i class="fas fa-check"></i> 8 حصص شهرياً</li>
+          <li><i class="fas fa-check"></i> وصول لمكتبة الفيديوهات</li>
+          <li><i class="fas fa-check"></i> تقييم شهري</li>
+          <li class="disabled"><i class="fas fa-times"></i> جلسات خاصة</li>
+          <li class="disabled"><i class="fas fa-times"></i> شهادة معتمدة</li>
+        </ul>
+        <a href="#enroll" class="btn-pricing">ابدأ الآن</a>
+      </div>
+
+      <div class="pricing-card featured-pricing">
+        <div class="pricing-badge">الأكثر شعبية</div>
+        <div class="pricing-header">
+          <div class="pricing-icon"><i class="fas fa-fire"></i></div>
+          <h3>المحترف</h3>
+          <p>للراغبين في التميز</p>
+        </div>
+        <div class="pricing-price">
+          <div class="monthly-price">
+            <span class="currency">ريال</span>
+            <span class="amount">599</span>
+            <span class="period">/ شهر</span>
+          </div>
+          <div class="yearly-price" style="display:none">
+            <span class="currency">ريال</span>
+            <span class="amount">479</span>
+            <span class="period">/ شهر</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> 3 دورات من اختيارك</li>
+          <li><i class="fas fa-check"></i> 20 حصة شهرياً</li>
+          <li><i class="fas fa-check"></i> وصول كامل لكل المحتوى</li>
+          <li><i class="fas fa-check"></i> تقييم أسبوعي</li>
+          <li><i class="fas fa-check"></i> جلستان خاصتان شهرياً</li>
+          <li><i class="fas fa-check"></i> شهادة معتمدة</li>
+        </ul>
+        <a href="#enroll" class="btn-pricing featured-btn">ابدأ الآن</a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <div class="pricing-icon"><i class="fas fa-crown"></i></div>
+          <h3>VIP النخبة</h3>
+          <p>تجربة استثنائية بلا حدود</p>
+        </div>
+        <div class="pricing-price">
+          <div class="monthly-price">
+            <span class="currency">ريال</span>
+            <span class="amount">999</span>
+            <span class="period">/ شهر</span>
+          </div>
+          <div class="yearly-price" style="display:none">
+            <span class="currency">ريال</span>
+            <span class="amount">799</span>
+            <span class="period">/ شهر</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> جميع الدورات بلا حدود</li>
+          <li><i class="fas fa-check"></i> حصص غير محدودة</li>
+          <li><i class="fas fa-check"></i> وصول 24/7 للاستوديو</li>
+          <li><i class="fas fa-check"></i> مدرب شخصي خاص</li>
+          <li><i class="fas fa-check"></i> جلسات خاصة أسبوعية</li>
+          <li><i class="fas fa-check"></i> شهادات معتمدة دولياً</li>
+        </ul>
+        <a href="#enroll" class="btn-pricing">ابدأ الآن</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENROLL / CTA ===== -->
+<section id="enroll" class="enroll-cta">
+  <div class="enroll-bg">
+    <div class="enroll-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+  </div>
+  <div class="section-container">
+    <div class="enroll-content">
+      <div class="section-tag">سجّل الآن</div>
+      <h2 class="enroll-title">
+        انضم لأكثر من <span class="counter-inline">5,000</span><br>
+        راقص محترف في رحلتهم
+      </h2>
+      <p class="enroll-desc">احجز مقعدك الآن وابدأ رحلتك نحو الاحتراف. الأماكن محدودة!</p>
+
+      <form class="enroll-form" id="enrollForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>الاسم الكامل</label>
+            <input type="text" placeholder="أدخل اسمك الكامل" required>
+          </div>
+          <div class="form-group">
+            <label>رقم الجوال</label>
+            <input type="tel" placeholder="05XXXXXXXX" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>البريد الإلكتروني</label>
+            <input type="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>الدورة المهتم بها</label>
+            <select required>
+              <option value="" disabled selected>اختر الدورة</option>
+              <option>الباليه الكلاسيكي</option>
+              <option>السالسا اللاتينية</option>
+              <option>الكونتمبوراري</option>
+              <option>هيب هوب</option>
+              <option>التانغو الأرجنتيني</option>
+              <option>زومبا فيتنس</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label>المستوى الحالي</label>
+          <div class="level-btns">
+            <button type="button" class="level-btn active">مبتدئ تماماً</button>
+            <button type="button" class="level-btn">لديّ خبرة بسيطة</button>
+            <button type="button" class="level-btn">متوسط</button>
+            <button type="button" class="level-btn">متقدم</button>
+          </div>
+        </div>
+        <button type="submit" class="btn-submit">
+          <span>احجز مقعدك مجاناً</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+        <p class="form-note"><i class="fas fa-lock"></i> معلوماتك محمية ولن تُشارك مع أي طرف ثالث</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+  <div class="section-container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">تواصل معنا</div>
+        <h2 class="section-title">نحن هنا<br><span class="gradient-text">دائماً لمساعدتك</span></h2>
+        <p>فريقنا متاح 7 أيام في الأسبوع للإجابة على استفساراتك</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>العنوان</strong>
+              <span>حي الملقا، الرياض، المملكة العربية السعودية</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>الهاتف</strong>
+              <span>+966 50 000 0000</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>البريد الإلكتروني</strong>
+              <span>info@rhythm-academy.sa</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>ساعات العمل</strong>
+              <span>السبت – الخميس: 9ص – 10م</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link tiktok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link snapchat"><i class="fab fa-snapchat"></i></a>
+          <a href="#" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label>الاسم</label>
+          <input type="text" placeholder="اسمك الكامل" required>
+        </div>
+        <div class="form-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>رقم الجوال</label>
+          <input type="tel" placeholder="05XXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label>الموضوع</label>
+          <select>
+            <option>استفسار عن دورة</option>
+            <option>حجز تجريبي مجاني</option>
+            <option>الشراكات والمجموعات</option>
+            <option>أخرى</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>الرسالة</label>
+          <textarea rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+        </div>
+        <button type="submit" class="btn-contact-submit">
+          <i class="fas fa-paper-plane"></i>
+          <span>أرسل الرسالة</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <div class="logo-badge"><i class="fas fa-music"></i></div>
+          <div class="logo-words">
+            <span class="logo-main">Rhythm</span>
+            <span class="logo-sub">أكاديمية الرقص</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          نؤمن أن الرقص لغة عالمية تتخطى الحدود.
+          أكاديمية Rhythm — حيث يبدأ التألق.
+        </p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-snapchat"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>الدورات</h4>
+        <ul>
+          <li><a href="#courses">الباليه الكلاسيكي</a></li>
+          <li><a href="#courses">السالسا اللاتينية</a></li>
+          <li><a href="#courses">الكونتمبوراري</a></li>
+          <li><a href="#courses">هيب هوب</a></li>
+          <li><a href="#courses">التانغو</a></li>
+          <li><a href="#courses">زومبا فيتنس</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#about">عن الأكاديمية</a></li>
+          <li><a href="#instructors">المدربون</a></li>
+          <li><a href="#schedule">الجدول</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#pricing">الأسعار</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>اشترك في نشرتنا</h4>
+        <p>احصل على آخر أخبار الدورات والعروض</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="بريدك الإلكتروني">
+          <button type="submit"><i class="fas fa-arrow-left"></i></button>
+        </form>
+        <div class="footer-certifications">
+          <div class="cert-badge"><i class="fas fa-certificate"></i> IDTA</div>
+          <div class="cert-badge"><i class="fas fa-certificate"></i> ISTD</div>
+          <div class="cert-badge"><i class="fas fa-certificate"></i> IDO</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-container">
+      <p>© 2025 أكاديمية Rhythm. جميع الحقوق محفوظة.</p>
+      <div class="footer-bottom-links">
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">الشروط والأحكام</a>
+        <a href="#">سياسة الاسترداد</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/966500000000" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-tooltip">تواصل عبر واتساب</span>
+</a>
+
+<!-- ===== SCROLL TO TOP ===== -->
+<button class="scroll-top" id="scrollTop">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ===== SUCCESS MODAL ===== -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal-box">
+    <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+    <h3>تم التسجيل بنجاح!</h3>
+    <p>شكراً لاهتمامك. سيتواصل معك فريقنا خلال 24 ساعة لتأكيد موعدك.</p>
+    <button class="btn-modal-close" id="closeModal">رائع!</button>
+  </div>
+</div>
+
+<script src="js/dance.js"></script>
+</body>
+</html>
