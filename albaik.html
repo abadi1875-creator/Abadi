@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="البيك - أشهى دجاج محمر في المملكة العربية السعودية. جودة لا تُضاهى منذ 1974." />
+  <meta name="keywords" content="البيك, مطعم البيك, دجاج محمر, روبيان, وجبات سريعة, جدة" />
+  <meta property="og:title" content="البيك | الطعم الأصيل منذ 1974" />
+  <meta property="og:description" content="استمتع بأشهى الدجاج المحمر والروبيان في المملكة العربية السعودية" />
+  <title>البيك | الطعم الأصيل منذ 1974</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/albaik.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-b">B</span>
+        <span class="loader-text">البيك</span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">
+          <span>B</span>
+        </div>
+        <span class="logo-text">البيك</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#menu" class="nav-link">القائمة</a></li>
+        <li><a href="#about" class="nav-link">عن البيك</a></li>
+        <li><a href="#branches" class="nav-link">الفروع</a></li>
+        <li><a href="#offers" class="nav-link">العروض</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#order" class="btn-order">
+          <i class="fas fa-shopping-bag"></i>
+          اطلب الآن
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="قائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">الرئيسية</a></li>
+      <li><a href="#menu" onclick="closeMobile()">القائمة</a></li>
+      <li><a href="#about" onclick="closeMobile()">عن البيك</a></li>
+      <li><a href="#branches" onclick="closeMobile()">الفروع</a></li>
+      <li><a href="#offers" onclick="closeMobile()">العروض</a></li>
+      <li><a href="#contact" onclick="closeMobile()">تواصل معنا</a></li>
+      <li><a href="#order" class="mobile-order-btn" onclick="closeMobile()">اطلب الآن</a></li>
+    </ul>
+  </div>
+  <div class="overlay" id="overlay" onclick="closeMobile()"></div>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-glow glow-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        <span>الأفضل منذ 1974</span>
+        <i class="fas fa-star"></i>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line line-1">الطعم الذي</span>
+        <span class="title-line line-2 highlight">لا يُنسى</span>
+        <span class="title-line line-3">في كل لقمة</span>
+      </h1>
+      <p class="hero-desc">دجاج محمر طازج، روبيان لذيذ، وجبات متكاملة تُرضي شهيتك وتُسعد عائلتك</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">
+          <i class="fas fa-utensils"></i>
+          استكشف القائمة
+        </a>
+        <a href="#order" class="btn-secondary">
+          <i class="fas fa-motorcycle"></i>
+          اطلب توصيل
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="50">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">سنة من الإبداع</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">فرع في المملكة</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-plus">M+</span>
+          <span class="stat-label">عميل سعيد</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="chicken-showcase">
+        <div class="glow-ring ring-outer"></div>
+        <div class="glow-ring ring-mid"></div>
+        <div class="glow-ring ring-inner"></div>
+        <div class="chicken-plate">
+          <div class="plate-base"></div>
+          <div class="food-emoji">🍗</div>
+          <div class="steam steam-1"></div>
+          <div class="steam steam-2"></div>
+          <div class="steam steam-3"></div>
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="fas fa-fire"></i>
+          <span>طازج يومياً</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-crown"></i>
+          <span>الأفضل تقييماً</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fas fa-leaf"></i>
+          <span>مكونات طبيعية</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#menu" class="hero-scroll">
+      <div class="scroll-circle">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <span>اكتشف المزيد</span>
+    </a>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>🍗 دجاج محمر</span>
+        <span>⭐ جودة عالية</span>
+        <span>🦐 روبيان طازج</span>
+        <span>🔥 وصفة سرية</span>
+        <span>❤️ نكهة أصيلة</span>
+        <span>🏆 الأفضل منذ 1974</span>
+        <span>🛵 توصيل سريع</span>
+        <span>👨‍👩‍👧‍👦 وجبات عائلية</span>
+        <span>🍗 دجاج محمر</span>
+        <span>⭐ جودة عالية</span>
+        <span>🦐 روبيان طازج</span>
+        <span>🔥 وصفة سرية</span>
+        <span>❤️ نكهة أصيلة</span>
+        <span>🏆 الأفضل منذ 1974</span>
+        <span>🛵 توصيل سريع</span>
+        <span>👨‍👩‍👧‍👦 وجبات عائلية</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== MENU ========== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">قائمتنا</span>
+        <h2 class="section-title">اختر ما يشتهيه قلبك</h2>
+        <p class="section-desc">كل طبق مُعد بعناية من أجود المكونات وأحدث المعدات</p>
+      </div>
+
+      <div class="menu-tabs" data-aos>
+        <button class="tab-btn active" data-tab="chicken">
+          <i class="fas fa-drumstick-bite"></i>
+          الدجاج
+        </button>
+        <button class="tab-btn" data-tab="shrimp">
+          <i class="fas fa-fish"></i>
+          الروبيان
+        </button>
+        <button class="tab-btn" data-tab="sandwiches">
+          <i class="fas fa-burger"></i>
+          السندويشات
+        </button>
+        <button class="tab-btn" data-tab="sides">
+          <i class="fas fa-bowl-food"></i>
+          المقبلات
+        </button>
+        <button class="tab-btn" data-tab="drinks">
+          <i class="fas fa-mug-hot"></i>
+          المشروبات
+        </button>
+      </div>
+
+      <!-- Chicken Tab -->
+      <div class="tab-content active" id="tab-chicken">
+        <div class="menu-grid">
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍗</div>
+              <div class="card-badge">الأكثر طلباً</div>
+            </div>
+            <div class="card-body">
+              <h3>2 قطعة دجاج</h3>
+              <p>قطعتان من الدجاج المحمر الذهبي بالتوابل السرية</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">١٢ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍗</div>
+              <div class="card-badge new-badge">جديد</div>
+            </div>
+            <div class="card-body">
+              <h3>3 قطع دجاج</h3>
+              <p>ثلاث قطع من الدجاج المحمر بالتتبيلة الأصلية</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">١٧ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍗</div>
+            </div>
+            <div class="card-body">
+              <h3>وجبة دجاج كاملة</h3>
+              <p>4 قطع دجاج + بطاطس + كول سلو + مشروب</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٢٨ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍗</div>
+              <div class="card-badge fam-badge">عائلي</div>
+            </div>
+            <div class="card-body">
+              <h3>وجبة عائلية</h3>
+              <p>8 قطع دجاج + بطاطس كبير + مشروبات + صلصات</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٦٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍗</div>
+            </div>
+            <div class="card-body">
+              <h3>باكيت البيك الملكي</h3>
+              <p>12 قطعة دجاج + 4 بطاطس + 4 مشروبات + صلصات متنوعة</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">١٠٠ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍗</div>
+            </div>
+            <div class="card-body">
+              <h3>أجنحة الدجاج</h3>
+              <p>6 أجنحة دجاج مقرمشة بالتوابل الحارة اللذيذة</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <span class="price">٢٢ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shrimp Tab -->
+      <div class="tab-content" id="tab-shrimp">
+        <div class="menu-grid">
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🦐</div>
+              <div class="card-badge">الأكثر طلباً</div>
+            </div>
+            <div class="card-body">
+              <h3>روبيان مقلي</h3>
+              <p>روبيان طازج مقلي بعجينة مقرمشة ذهبية اللون</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٢٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🦐</div>
+            </div>
+            <div class="card-body">
+              <h3>وجبة روبيان</h3>
+              <p>روبيان مقلي + بطاطس + مشروب + صلصة ثوم</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٣٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🦐</div>
+              <div class="card-badge fam-badge">عائلي</div>
+            </div>
+            <div class="card-body">
+              <h3>باكيت الروبيان العائلي</h3>
+              <p>روبيان كبير + 4 بطاطس + 4 مشروبات + صلصات</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٨٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sandwiches Tab -->
+      <div class="tab-content" id="tab-sandwiches">
+        <div class="menu-grid">
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍔</div>
+              <div class="card-badge">الأكثر طلباً</div>
+            </div>
+            <div class="card-body">
+              <h3>برجر الدجاج</h3>
+              <p>دجاج مقرمش + خس + طماطم + صلصة البيك الخاصة</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">١٨ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🌯</div>
+            </div>
+            <div class="card-body">
+              <h3>شاورما الدجاج</h3>
+              <p>دجاج مشوي + ثوم + خضار + خبز عربي طازج</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <span class="price">١٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍔</div>
+              <div class="card-badge new-badge">جديد</div>
+            </div>
+            <div class="card-body">
+              <h3>برجر الروبيان</h3>
+              <p>روبيان مقرمش + كول سلو + صلصة خاصة + جبن</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٢٢ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sides Tab -->
+      <div class="tab-content" id="tab-sides">
+        <div class="menu-grid">
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🍟</div>
+            </div>
+            <div class="card-body">
+              <h3>بطاطس مقلية</h3>
+              <p>بطاطس مقلية مقرمشة بملح البحر والتوابل</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٧ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🥗</div>
+            </div>
+            <div class="card-body">
+              <h3>كول سلو</h3>
+              <p>سلطة الكرنب الطازجة بصوص الكريمة اللذيذ</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <span class="price">٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🧅</div>
+            </div>
+            <div class="card-body">
+              <h3>حلقات البصل</h3>
+              <p>حلقات بصل مقلية مقرمشة ذهبية اللون</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٨ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks Tab -->
+      <div class="tab-content" id="tab-drinks">
+        <div class="menu-grid">
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🥤</div>
+            </div>
+            <div class="card-body">
+              <h3>كولا</h3>
+              <p>مشروب كولا بارد ومنعش بأحجام متعددة</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🧃</div>
+            </div>
+            <div class="card-body">
+              <h3>عصير طازج</h3>
+              <p>عصائر طبيعية: برتقال، مانجو، تفاح، توت</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <span class="price">١٠ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card" data-aos>
+            <div class="card-image">
+              <div class="food-icon">🥛</div>
+            </div>
+            <div class="card-body">
+              <h3>ميلك شيك</h3>
+              <p>ميلك شيك كريمي بنكهات: فانيليا، شوكولاتة، فراولة</p>
+              <div class="card-meta">
+                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span class="price">١٥ ر.س</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-plus"></i>
+                أضف للطلب
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPECIAL OFFER ========== -->
+  <section id="offers" class="offers-section">
+    <div class="offers-bg">
+      <div class="offers-glow"></div>
+    </div>
+    <div class="container">
+      <div class="offers-wrapper" data-aos>
+        <div class="offer-card main-offer">
+          <div class="offer-tag">عرض اليوم</div>
+          <h2>وجبة البيك المميزة</h2>
+          <p>4 قطع دجاج + 2 بطاطس + 2 مشروب + كول سلو</p>
+          <div class="offer-prices">
+            <span class="old-price">٤٥ ر.س</span>
+            <span class="new-price">٣٢ ر.س</span>
+          </div>
+          <div class="offer-timer">
+            <span>ينتهي العرض خلال:</span>
+            <div class="timer">
+              <div class="time-unit">
+                <span id="hours">12</span>
+                <label>ساعة</label>
+              </div>
+              <span class="colon">:</span>
+              <div class="time-unit">
+                <span id="minutes">45</span>
+                <label>دقيقة</label>
+              </div>
+              <span class="colon">:</span>
+              <div class="time-unit">
+                <span id="seconds">30</span>
+                <label>ثانية</label>
+              </div>
+            </div>
+          </div>
+          <a href="#order" class="btn-offer">احصل على العرض</a>
+        </div>
+
+        <div class="side-offers">
+          <div class="offer-mini" data-aos>
+            <div class="mini-icon">🎉</div>
+            <div class="mini-content">
+              <h4>عرض الطلب الأول</h4>
+              <p>خصم 20% على طلبك الأول</p>
+              <span class="mini-code">كود: ALBAIK20</span>
+            </div>
+          </div>
+          <div class="offer-mini" data-aos>
+            <div class="mini-icon">👨‍👩‍👧‍👦</div>
+            <div class="mini-content">
+              <h4>وجبة العائلة</h4>
+              <p>اشترِ 3 وجبات واحصل على الرابعة مجاناً</p>
+              <span class="mini-code">كل يوم جمعة</span>
+            </div>
+          </div>
+          <div class="offer-mini" data-aos>
+            <div class="mini-icon">🌙</div>
+            <div class="mini-content">
+              <h4>عرض ما بعد منتصف الليل</h4>
+              <p>خصم 15% على جميع الطلبات من 12 - 3 صباحاً</p>
+              <span class="mini-code">تلقائي عند الطلب</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-aos>
+          <div class="about-img-wrapper">
+            <div class="about-main-img">
+              <div class="about-icon-large">🏪</div>
+            </div>
+            <div class="about-badge-float">
+              <i class="fas fa-award"></i>
+              <div>
+                <strong>منذ 1974</strong>
+                <span>أفضل مطعم</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-cards-row">
+            <div class="about-mini-card">
+              <i class="fas fa-users"></i>
+              <strong>5+ مليون</strong>
+              <span>عميل راضٍ</span>
+            </div>
+            <div class="about-mini-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <strong>100+ فرع</strong>
+              <span>في المملكة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos>
+          <span class="section-tag">قصتنا</span>
+          <h2 class="section-title">نصف قرن من الشغف بالطعم الأصيل</h2>
+          <p class="about-text">
+            بدأت رحلة البيك عام 1974 في مدينة جدة على يد شكور أبو غزالة، بحلم بسيط: تقديم أجود الدجاج المحمر بتوابل سرية لا تُكشف.
+          </p>
+          <p class="about-text">
+            اليوم، أصبح البيك أكثر من مجرد مطعم، بل أصبح جزءاً من الهوية السعودية وذاكرة كل عائلة. وصفتنا السرية التي مضى عليها أكثر من 50 عاماً لا تزال تُصنع بنفس الحب والشغف.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="feature-text">
+                <strong>مكونات 100% طبيعية</strong>
+                <span>لا مواد حافظة أو مضافات صناعية</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="feature-text">
+                <strong>معتمد من الجهات الصحية</strong>
+                <span>أعلى معايير الجودة والنظافة</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="feature-text">
+                <strong>حلال 100%</strong>
+                <span>ذبح شرعي معتمد</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="feature-text">
+                <strong>طازج يومياً</strong>
+                <span>لا نقدم إلا ما هو طازج</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#menu" class="btn-primary">
+            <i class="fas fa-utensils"></i>
+            استكشف قائمتنا
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BRANCHES ========== -->
+  <section id="branches" class="branches-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">فروعنا</span>
+        <h2 class="section-title">نحن في كل مكان</h2>
+        <p class="section-desc">أكثر من 100 فرع في المملكة العربية السعودية لخدمتك على مدار الساعة</p>
+      </div>
+
+      <div class="branches-search" data-aos>
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="ابحث عن فرع قريب منك..." id="branchSearch" />
+        </div>
+      </div>
+
+      <div class="branches-grid" data-aos>
+        <div class="branch-card">
+          <div class="branch-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="branch-info">
+            <h3>جدة - طريق الملك عبدالعزيز</h3>
+            <p>طريق الملك عبدالعزيز، حي العزيزية</p>
+            <div class="branch-hours">
+              <i class="fas fa-clock"></i>
+              <span>مفتوح 24 ساعة</span>
+            </div>
+          </div>
+          <a href="#" class="branch-directions">
+            <i class="fas fa-directions"></i>
+            اتجاهات
+          </a>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="branch-info">
+            <h3>مكة المكرمة - العزيزية</h3>
+            <p>شارع أجياد، حي العزيزية، مكة المكرمة</p>
+            <div class="branch-hours">
+              <i class="fas fa-clock"></i>
+              <span>مفتوح 24 ساعة</span>
+            </div>
+          </div>
+          <a href="#" class="branch-directions">
+            <i class="fas fa-directions"></i>
+            اتجاهات
+          </a>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="branch-info">
+            <h3>المدينة المنورة - قباء</h3>
+            <p>طريق قباء، المدينة المنورة</p>
+            <div class="branch-hours">
+              <i class="fas fa-clock"></i>
+              <span>6 ص - 3 ص</span>
+            </div>
+          </div>
+          <a href="#" class="branch-directions">
+            <i class="fas fa-directions"></i>
+            اتجاهات
+          </a>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="branch-info">
+            <h3>الرياض - طريق الملك فهد</h3>
+            <p>طريق الملك فهد، حي العليا، الرياض</p>
+            <div class="branch-hours">
+              <i class="fas fa-clock"></i>
+              <span>مفتوح 24 ساعة</span>
+            </div>
+          </div>
+          <a href="#" class="branch-directions">
+            <i class="fas fa-directions"></i>
+            اتجاهات
+          </a>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="branch-info">
+            <h3>الدمام - الكورنيش</h3>
+            <p>كورنيش الدمام، شارع الأمير محمد بن فهد</p>
+            <div class="branch-hours">
+              <i class="fas fa-clock"></i>
+              <span>8 ص - 2 ص</span>
+            </div>
+          </div>
+          <a href="#" class="branch-directions">
+            <i class="fas fa-directions"></i>
+            اتجاهات
+          </a>
+        </div>
+
+        <div class="branch-card">
+          <div class="branch-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="branch-info">
+            <h3>الطائف - شارع الملك فيصل</h3>
+            <p>شارع الملك فيصل، وسط الطائف</p>
+            <div class="branch-hours">
+              <i class="fas fa-clock"></i>
+              <span>7 ص - 1 ص</span>
+            </div>
+          </div>
+          <a href="#" class="branch-directions">
+            <i class="fas fa-directions"></i>
+            اتجاهات
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">آراء عملائنا</span>
+        <h2 class="section-title">ماذا يقول عملاؤنا</h2>
+      </div>
+
+      <div class="reviews-slider" data-aos>
+        <div class="reviews-track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"البيك من أول تذوق وللآخر. الدجاج دائماً طازج ومقرمش، والصلصة لا مثيل لها في العالم!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">م</div>
+              <div>
+                <strong>محمد العمري</strong>
+                <span>جدة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"كل ما رجعت من السفر، أول ما أطلبه البيك. طعم ذكرياتي وطفولتي وما تغير أبداً!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">ن</div>
+              <div>
+                <strong>نورة الشمري</strong>
+                <span>الرياض</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"الروبيان في البيك لا يوجد له نظير. جربت روبيان في أماكن كثيرة لكن البيك يفوق الجميع!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">ع</div>
+              <div>
+                <strong>عبدالله القحطاني</strong>
+                <span>الدمام</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"خدمة سريعة، طعام لذيذ، وسعر مناسب. هذا هو البيك الذي نعرفه ونحبه منذ الصغر!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">س</div>
+              <div>
+                <strong>سارة المالكي</strong>
+                <span>مكة المكرمة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-controls">
+          <button class="review-btn prev-btn" id="prevReview">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="reviews-dots" id="reviewsDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="review-btn next-btn" id="nextReview">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APP SECTION ========== -->
+  <section id="order" class="app-section">
+    <div class="app-bg">
+      <div class="app-glow-1"></div>
+      <div class="app-glow-2"></div>
+    </div>
+    <div class="container">
+      <div class="app-grid">
+        <div class="app-content" data-aos>
+          <span class="section-tag">تطبيق البيك</span>
+          <h2 class="section-title">اطلب من أي مكان وفي أي وقت</h2>
+          <p>حمّل تطبيق البيك الآن واستمتع بتجربة طلب سهلة وسريعة مع عروض حصرية لمستخدمي التطبيق</p>
+
+          <ul class="app-features">
+            <li><i class="fas fa-check"></i> تتبع طلبك لحظة بلحظة</li>
+            <li><i class="fas fa-check"></i> عروض وخصومات حصرية</li>
+            <li><i class="fas fa-check"></i> حفظ طلباتك المفضلة</li>
+            <li><i class="fas fa-check"></i> دفع آمن بطرق متعددة</li>
+            <li><i class="fas fa-check"></i> توصيل سريع لباب منزلك</li>
+          </ul>
+
+          <div class="app-downloads">
+            <a href="#" class="store-btn">
+              <i class="fab fa-apple"></i>
+              <div>
+                <span>تنزيل من</span>
+                <strong>App Store</strong>
+              </div>
+            </a>
+            <a href="#" class="store-btn">
+              <i class="fab fa-google-play"></i>
+              <div>
+                <span>تنزيل من</span>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="app-mockup" data-aos>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="app-ui">
+                <div class="app-header-ui">
+                  <div class="app-logo-ui">🍗 البيك</div>
+                  <div class="app-notif"><i class="fas fa-bell"></i></div>
+                </div>
+                <div class="app-banner-ui">
+                  <p>عرض اليوم</p>
+                  <h4>وجبة كاملة</h4>
+                  <span>٣٢ ر.س فقط</span>
+                </div>
+                <div class="app-items-ui">
+                  <div class="app-item">🍗 <span>دجاج محمر</span></div>
+                  <div class="app-item">🦐 <span>روبيان مقلي</span></div>
+                  <div class="app-item">🍔 <span>برجر دجاج</span></div>
+                </div>
+                <div class="app-order-btn-ui">اطلب الآن 🛵</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">تواصل معنا</span>
+        <h2 class="section-title">نحن هنا لخدمتك</h2>
+        <p class="section-desc">فريقنا متاح على مدار الساعة للإجابة على استفساراتك</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos>
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>اتصل بنا</h3>
+            <p>920001234</p>
+            <span>متاح 24/7</span>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>راسلنا</h3>
+            <p>info@albaik.com</p>
+            <span>رد خلال ساعتين</span>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-headset"></i>
+            <h3>الدعم الفوري</h3>
+            <p>واتساب وتطبيق البيك</p>
+            <span>دردشة مباشرة</span>
+          </div>
+        </div>
+
+        <form class="contact-form" data-aos id="contactForm">
+          <div class="form-group">
+            <label>الاسم الكامل</label>
+            <input type="text" placeholder="أدخل اسمك" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>البريد الإلكتروني</label>
+              <input type="email" placeholder="example@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>رقم الهاتف</label>
+              <input type="tel" placeholder="05xxxxxxxx" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>الموضوع</label>
+            <select>
+              <option>استفسار عام</option>
+              <option>شكوى</option>
+              <option>اقتراح</option>
+              <option>شراكة تجارية</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>رسالتك</label>
+            <textarea placeholder="اكتب رسالتك هنا..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i>
+            أرسل الرسالة
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon"><span>B</span></div>
+              <span>البيك</span>
+            </div>
+            <p>الطعم الأصيل الذي نعرفه ونحبه منذ عام 1974. نلتزم بتقديم أجود المأكولات بأعلى معايير الجودة.</p>
+            <div class="social-links">
+              <a href="#" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" aria-label="انستقرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="سناب شات"><i class="fab fa-snapchat"></i></a>
+              <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#menu">قائمة الطعام</a></li>
+              <li><a href="#about">قصتنا</a></li>
+              <li><a href="#branches">فروعنا</a></li>
+              <li><a href="#offers">العروض</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>خدماتنا</h4>
+            <ul>
+              <li><a href="#">التوصيل</a></li>
+              <li><a href="#">الطلب المسبق</a></li>
+              <li><a href="#">وجبات الشركات</a></li>
+              <li><a href="#">الفعاليات والمناسبات</a></li>
+              <li><a href="#">برنامج الولاء</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>اشترك في نشرتنا</h4>
+            <p>احصل على أحدث العروض والأخبار مباشرة إلى بريدك</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="بريدك الإلكتروني" />
+              <button><i class="fas fa-arrow-left"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 البيك. جميع الحقوق محفوظة.</p>
+        <div class="footer-legal">
+          <a href="#">سياسة الخصوصية</a>
+          <a href="#">شروط الاستخدام</a>
+          <a href="#">سياسة الاسترداد</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CART TOAST ========== -->
+  <div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i>
+    <span>تمت إضافة العنصر للطلب!</span>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/albaik.js"></script>
+</body>
+</html>
